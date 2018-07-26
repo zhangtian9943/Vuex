@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <vuexdemo/>
+    <vuexdemo>
+    </vuexdemo>
+    
   </div>
 </template>
 
