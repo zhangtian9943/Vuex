@@ -3,19 +3,22 @@
     <img src="./assets/logo.png">
     <vuexdemo>
     </vuexdemo>
-    
+    <testdemo>
+    </testdemo>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld'
 import vuexdemo from './components/vuexDemo'
+import testdemo from './components/testDemo'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    vuexdemo
+    vuexdemo,
+    testdemo
   }
 }
 </script>

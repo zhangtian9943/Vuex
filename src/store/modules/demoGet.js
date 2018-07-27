@@ -12,7 +12,7 @@ const demoGet = {
 	},
 	actions: {
 		addNum({ commit }, data) {
-			console.log('我在demoGet里被触发了' + data)
+			alert('我在demoGet里被触发了' + data)
 			commit('ADD_Num', data)
 		}
 	}

@@ -9,8 +9,10 @@
     <span>state: 存储初始化数据（对象）{name: 三， sex：男， age: 18}</span><br>
     <span>mutations: 对state中的数据进行修改 类似于computed</span><br>
     <span>getters: 对state里面的数据进行过滤,如：获取sate 中的name字段</span><br>
-    <span>action:处理mutations中写好的方法</span><br>
+    <span>action:处理mutations中写好的方法</span><br><br><br><br>
     
+    <!-- <button @click="studentSay">看看下面的同学在说什么</button> -->
+    <span>{{studentTalk}}</span>
   </div>
 </template>
 <script>
@@ -20,16 +22,22 @@ export default {
   data () {
     return {
       numTest1: 0,
-      numTest2: 0
+      numTest2: 0,
+      studentTalk: ''
     }
   },
   computed: {
     ...mapGetters(['count'])
   },
+  mounted () {
+    // this.$root.Bus.$on('studentSay', val => {
+    //   this.studentTalk = val
+    // })
+  },
   methods: {
     ...mapActions([
       'addNum'
-      ]),
+    ]),
     // 拿到flux中存储的数值
     getData() {
       this.numTest1 = this.count
