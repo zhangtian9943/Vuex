@@ -17,8 +17,8 @@
 </template>
 <script>
 import { mapGetters, mapActions} from 'vuex'
-// import { mapActions } from 'vuex'
 export default {
+  name: 'veuxDemo',
   data () {
     return {
       numTest1: 0,

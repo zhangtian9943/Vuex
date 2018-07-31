@@ -15,6 +15,7 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 export default {
+	name: 'testDemo',
 	data () {
 		return {
 			sayOne: '',

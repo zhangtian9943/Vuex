@@ -4,8 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import Vuex from 'vuex'
 import store from './store/index'
+import vueRouter from 'vue-router'
 // vuexs
-
+Vue.use(vueRouter)
 Vue.use(Vuex)
 
 /* eslint-disable no-new */
